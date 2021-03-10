@@ -21,6 +21,7 @@ if (Get-Module -ListAvailable -Name ExchangeOnlineManagement) {
 } 
 else {
     Write-Host "Exchange Online Management Module not installed. Install from here: https://www.powershellgallery.com/packages/ExchangeOnlineManagement/"
+    Break
 }
 
 if (Get-Module -ListAvailable -Name Microsoft.Online.SharePoint.PowerShell) {
@@ -28,6 +29,7 @@ if (Get-Module -ListAvailable -Name Microsoft.Online.SharePoint.PowerShell) {
 } 
 else {
     Write-Host "SharePoint Online PowerShell module not installed. Install from here: https://www.powershellgallery.com/packages/Microsoft.Online.SharePoint.PowerShell/"
+    Break
 }
 #Connect to ExchangeOnlineManagement
 Import-Module ExchangeOnlineManagement
