@@ -87,3 +87,6 @@ Disconnect-SPOService
 Remove-PSSession -ComputerName outlook.office365.com
 Write-Host "ExchangeOnline and SharePointOnline successfully disconnected."
 Write-host "VBO Job '$Job' Update Successful."
+
+# Cleaning up variables used in this session.
+Remove-Variable -Name * -ErrorAction SilentlyContinue

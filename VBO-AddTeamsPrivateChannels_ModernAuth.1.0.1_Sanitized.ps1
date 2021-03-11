@@ -97,3 +97,6 @@ Disconnect-SPOService
 Write-Host "SharePointOnline successfully disconnected."
 Disconnect-ExchangeOnline -confirm:$false
 Write-host "VBO Job '$Job' Update Successful."
+
+# Cleaning up variables used in this session.
+Remove-Variable -Name * -ErrorAction SilentlyContinue
